@@ -101,6 +101,15 @@ extension TSMessageViewController: UITableViewDataSource {
         cell.setCellContnet(self.itemDataSouce[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView:UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style:UITableViewRowActionStyle.default, title: "删除", handler: {(action, IndexPath) -> Void in
+            self.itemDataSouce.remove(at: indexPath.row)
+            //TODO，删除远程服务器上的聊天记录
+            self.listTableView.deleteRows(at: [indexPath], with: .fade)
+        })
+        return [deleteAction]
+    }
 }
 
 // MARK: - @protocol ActionFloatViewDelegate
