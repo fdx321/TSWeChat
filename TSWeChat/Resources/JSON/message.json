@@ -24,7 +24,7 @@
         "is_read": true,
         "userid": "1011",
         "meesage_from_type": "4",
-        "avatar_url": "http://tp4.sinaimg.cn/2217389255/180/5734480469/0",
+        "avatar_url": "http://tva1.sinaimg.cn/crop.0.0.439.439.180/6a2787d4jw1eh981cl8zpj20c80c8dh6.jpg",
         "nickname": "包租婆",
         "last_message": {
           "message_id": "735pc1456111059588",
@@ -42,7 +42,7 @@
         "is_read": false,
         "userid": "719",
         "meesage_from_type": "1",
-        "avatar_url": "http://tp2.sinaimg.cn/2144684673/180/5746266273/1",
+        "avatar_url": "http://tva1.sinaimg.cn/crop.0.0.640.640.180/006fw2ZFjw8f5ipt669wzj30hs0hswf7.jpg",
         "nickname": "我了个擦",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1454407342317",
@@ -60,7 +60,7 @@
         "is_read": true,
         "userid": "3089",
         "meesage_from_type": "1",
-        "avatar_url": "http://tp3.sinaimg.cn/5483505050/180/5751030225/1",
+        "avatar_url": "http://tva2.sinaimg.cn/crop.0.0.180.180.50/795bf814jw1e8qgp5bmzyj2050050aa8.jpg",
         "nickname": "栾地舒",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1454403959249",
@@ -78,7 +78,7 @@
         "is_read": true,
         "userid": "900003",
         "meesage_from_type": 3,
-        "avatar_url": "http://tp4.sinaimg.cn/2656274875/180/5744017446/1",
+        "avatar_url": "http://tva1.sinaimg.cn/crop.0.0.1242.1242.50/8e385e78jw8fbfugyv9ofj20yi0yidhj.jpg",
         "nickname": "微信助手",
         "last_message": {
           "message_content_type": "0",
@@ -96,7 +96,7 @@
         "is_read": true,
         "userid": "2077",
         "meesage_from_type": "2",
-        "avatar_url": "http://tp4.sinaimg.cn/1345566427/180/5730976522/0",
+        "avatar_url": "http://tva4.sinaimg.cn/crop.0.0.177.177.50/612edf3agw1ekppvdur8wj2050050q32.jpg",
         "nickname": "ALvslee",
         "last_message": {
           "message_id": "3829android1454063104269",
@@ -114,7 +114,7 @@
         "is_read": true,
         "userid": "2179",
         "meesage_from_type": "2",
-        "avatar_url": "http://tp4.sinaimg.cn/1942473263/180/5746245576/1",
+        "avatar_url": "http://tva4.sinaimg.cn/crop.0.0.180.180.50/a20a9b80jw8ezfk1my0xcj2050050aa8.jpg",
         "nickname": "杜先生",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1453195614287",
@@ -132,7 +132,7 @@
         "is_read": true,
         "userid": "2299",
         "meesage_from_type": "2",
-        "avatar_url": "http://tp3.sinaimg.cn/1742121542/180/40036262233/1",
+        "avatar_url": "http://tva1.sinaimg.cn/crop.325.645.682.682.50/65932180jw8f5k6e6wggxj20zk1hc7dg.jpg",
         "nickname": "搞基组",
         "last_message": {
           "message_id": "pc14527586068924",
@@ -144,96 +144,6 @@
           "client_message_id": "pc14527586068924",
           "message": "大家搞起来",
           "device": "0"
-        }
-      },
-      {
-        "is_read": true,
-        "userid": "2279",
-        "meesage_from_type": "2",
-        "avatar_url": "http://tp2.sinaimg.cn/1258256457/180/5616578718/1",
-        "nickname": "吐槽",
-        "last_message": {
-          "message_id": "3089iphone1452741634531",
-          "receive_userid": "2279",
-          "send_userid": "3089",
-          "ctime": "2016-01-14 11:20:36",
-          "timestamp": 1452741636733,
-          "message_content_type": "3",
-          "client_message_id": "3089iphone1452741634531",
-          "message": "哈哈哈哈哈哈哈哈哈哈右边那个少年你是干嘛的？",
-          "device": "iphone"
-        }
-      },
-      {
-        "is_read": true,
-        "userid": "3789",
-        "meesage_from_type": "1",
-        "avatar_url": "http://tp4.sinaimg.cn/3217179555/180/5693967295/1",
-        "nickname": "栾的一比",
-        "last_message": {
-          "message_id": "wx1234skjksmsjdfwe234iphone1452670900407",
-          "receive_userid": "3789",
-          "send_userid": "wx1234skjksmsjdfwe234",
-          "ctime": "2016-01-13 15:41:40",
-          "timestamp": 1452670900430,
-          "message_content_type": "0",
-          "client_message_id": "wx1234skjksmsjdfwe234iphone1452670900407",
-          "message": "[偷偷笑][偷偷笑][偷偷笑]",
-          "device": "iphone"
-        }
-      },
-      {
-        "is_read": true,
-        "userid": "2099",
-        "meesage_from_type": "2",
-        "avatar_url": "http://tp4.sinaimg.cn/1713926427/180/40000875722/1",
-        "nickname": "微博搞笑排行榜",
-        "last_message": {
-          "message_id": "wx1234skjksmsjdfwe234iphone1449215396443",
-          "receive_userid": "2099",
-          "send_userid": "wx1234skjksmsjdfwe234",
-          "ctime": "2015-12-04 15:49:56",
-          "timestamp": 1449215396305,
-          "message_content_type": "0",
-          "client_message_id": "wx1234skjksmsjdfwe234iphone1449215396443",
-          "message": "58888",
-          "device": "iphone"
-        }
-      },
-      {
-        "is_read": true,
-        "userid": "740",
-        "meesage_from_type": "1",
-        "avatar_url": "http://tp4.sinaimg.cn/1720173771/180/40048639291/1",
-        "nickname": "黄有赞",
-        "last_message": {
-          "message_id": "740android1446946463886",
-          "receive_userid": "wx1234skjksmsjdfwe234",
-          "send_userid": "740",
-          "ctime": "2015-11-08 09:34:23",
-          "timestamp": 1446946463481,
-          "message_content_type": "0",
-          "client_message_id": "740android1446946463886",
-          "message": "不知道呢…",
-          "device": "android"
-        }
-      },
-      {
-        "is_read": true,
-        "userid": "1049",
-        "meesage_from_type": "2",
-        "avatar_url": "http://tp1.sinaimg.cn/1197191492/180/5749865306/1",
-        "nickname": "大妹子",
-        "last_message": {
-          "message_id": "wx1234skjksmsjdfwe234iphone1445935599453",
-          "receive_userid": "1049",
-          "send_userid": "wx1234skjksmsjdfwe234",
-          "ctime": "2015-10-27 16:46:39",
-          "timestamp": 1445935599805,
-          "message_content_type": "0",
-          "client_message_id": "wx1234skjksmsjdfwe234iphone1445935599453",
-          "message": "好久不见啊",
-          "device": "iphone"
         }
       }
     ]
