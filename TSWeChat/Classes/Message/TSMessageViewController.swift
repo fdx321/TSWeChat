@@ -103,11 +103,38 @@ extension TSMessageViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView:UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        //删除聊天记录
         let deleteAction = UITableViewRowAction(style:UITableViewRowActionStyle.default, title: "删除", handler: {(action, IndexPath) -> Void in
             self.itemDataSouce.remove(at: indexPath.row)
             //TODO，删除远程服务器上的聊天记录
             self.listTableView.deleteRows(at: [indexPath], with: .fade)
         })
+        
+        //标记为已读或未读
+        let isReadAction = UITableViewRowAction(style:UITableViewRowActionStyle.normal, title:"", handler:{(action, indexPath) -> Void in
+            self.itemDataSouce.get(index: indexPath.row).isRead = !self.itemDataSouce.get(index: indexPath.row).isRead!
+            self.listTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+        })
+        if self.itemDataSouce.get(index: indexPath.row).isRead! {
+            isReadAction.title = "标记为未读"
+        }else{
+            isReadAction.title = "标记为已读"
+        }
+        
+        //取消关注
+        let unSubscribeAction = UITableViewRowAction(style:UITableViewRowActionStyle.normal, title:"取消关注", handler:{(action, indexPath) -> Void in
+            //TODO 取消关注的逻辑
+            self.listTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+        })
+
+        
+        let messageFromtype = self.itemDataSouce.get(index: indexPath.row).messageFromType
+        if messageFromtype == MessageFromType.Personal || messageFromtype == MessageFromType.Group {
+            return [deleteAction, isReadAction]
+        } else if messageFromtype == MessageFromType.PublicServer || messageFromtype == MessageFromType.PublicSubscribe{
+            return [deleteAction, unSubscribeAction]
+        }
+        
         return [deleteAction]
     }
 }

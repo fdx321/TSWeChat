@@ -3,7 +3,7 @@
   "message": "success!",
   "data": [
       {
-           "message_unread_num": 0,
+           "is_read": false,
            "userid": "3277",
            "meesage_from_type": "2",
            "avatar_url": "http://ww2.sinaimg.cn/large/6a011e49jw1f1j01nj8g6j204f04ft8r.jpg",
@@ -21,9 +21,9 @@
            }
         },
       {
-        "message_unread_num": 374,
+        "is_read": true,
         "userid": "1011",
-        "meesage_from_type": "2",
+        "meesage_from_type": "4",
         "avatar_url": "http://tp4.sinaimg.cn/2217389255/180/5734480469/0",
         "nickname": "包租婆",
         "last_message": {
@@ -39,7 +39,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": false,
         "userid": "719",
         "meesage_from_type": "1",
         "avatar_url": "http://tp2.sinaimg.cn/2144684673/180/5746266273/1",
@@ -57,7 +57,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "3089",
         "meesage_from_type": "1",
         "avatar_url": "http://tp3.sinaimg.cn/5483505050/180/5751030225/1",
@@ -75,7 +75,7 @@
         }
       },
       {
-        "message_unread_num": 7,
+        "is_read": true,
         "userid": "900003",
         "meesage_from_type": 3,
         "avatar_url": "http://tp4.sinaimg.cn/2656274875/180/5744017446/1",
@@ -93,7 +93,7 @@
         }
       },
       {
-        "message_unread_num": 2,
+        "is_read": true,
         "userid": "2077",
         "meesage_from_type": "2",
         "avatar_url": "http://tp4.sinaimg.cn/1345566427/180/5730976522/0",
@@ -111,7 +111,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "2179",
         "meesage_from_type": "2",
         "avatar_url": "http://tp4.sinaimg.cn/1942473263/180/5746245576/1",
@@ -129,7 +129,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "2299",
         "meesage_from_type": "2",
         "avatar_url": "http://tp3.sinaimg.cn/1742121542/180/40036262233/1",
@@ -147,7 +147,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "2279",
         "meesage_from_type": "2",
         "avatar_url": "http://tp2.sinaimg.cn/1258256457/180/5616578718/1",
@@ -165,7 +165,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "3789",
         "meesage_from_type": "1",
         "avatar_url": "http://tp4.sinaimg.cn/3217179555/180/5693967295/1",
@@ -183,7 +183,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "2099",
         "meesage_from_type": "2",
         "avatar_url": "http://tp4.sinaimg.cn/1713926427/180/40000875722/1",
@@ -201,7 +201,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "740",
         "meesage_from_type": "1",
         "avatar_url": "http://tp4.sinaimg.cn/1720173771/180/40048639291/1",
@@ -219,7 +219,7 @@
         }
       },
       {
-        "message_unread_num": 0,
+        "is_read": true,
         "userid": "1049",
         "meesage_from_type": "2",
         "avatar_url": "http://tp1.sinaimg.cn/1197191492/180/5749865306/1",

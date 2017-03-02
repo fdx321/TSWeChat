@@ -34,7 +34,7 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 class TSMessageTableViewCell: UITableViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var unreadNumberLabel: UILabel!
+    @IBOutlet weak var isReadLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lastMessageLabel: UILabel!
@@ -44,14 +44,14 @@ class TSMessageTableViewCell: UITableViewCell {
         self.avatarImageView.layer.masksToBounds = true
         self.avatarImageView.layer.cornerRadius = self.avatarImageView.width / 2 / 180 * 30
         
-        self.unreadNumberLabel.layer.masksToBounds = true
-        self.unreadNumberLabel.layer.cornerRadius = self.unreadNumberLabel.height / 2.0
+        self.isReadLabel.layer.masksToBounds = true
+        self.isReadLabel.layer.cornerRadius = self.isReadLabel.height / 2.0
     }
 
     func setCellContnet(_ model: MessageModel) {
         self.avatarImageView.ts_setImageWithURLString(model.middleImageURL, placeholderImage: model.messageFromType.placeHolderImage)
-        self.unreadNumberLabel.text = model.unreadNumber > 99 ? "99+" : String(model.unreadNumber!)
-        self.unreadNumberLabel.isHidden = (model.unreadNumber == 0)
+//        self.unreadNumberLabel.text = model.unreadNumber > 99 ? "99+" : String(model.unreadNumber!)
+        self.isReadLabel.isHidden = (model.isRead == true)
         self.lastMessageLabel.text = model.lastMessage!
         self.dateLabel.text = model.dateString!
         self.nameLabel.text = model.nickname!

@@ -11,7 +11,7 @@ import ObjectMapper
 
 class MessageModel: NSObject, TSModelProtocol {
     var middleImageURL : String?
-    var unreadNumber : Int?
+    var isRead : Bool? //消息是否已读
     var nickname : String?
     var messageFromType : MessageFromType = MessageFromType.Personal
     var messageContentType : MessageContentType = MessageContentType.Text
@@ -25,7 +25,7 @@ class MessageModel: NSObject, TSModelProtocol {
     
     func mapping(map: Map) {
         middleImageURL <- map["avatar_url"]
-        unreadNumber <- map["message_unread_num"]
+        isRead <- map["is_read"]
         nickname <- map["nickname"]
         messageFromType <- (map["meesage_from_type"], EnumTransform<MessageFromType>())
         chatId <- map["userid"]
