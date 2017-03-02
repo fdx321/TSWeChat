@@ -50,7 +50,6 @@ class TSMessageTableViewCell: UITableViewCell {
 
     func setCellContnet(_ model: MessageModel) {
         self.avatarImageView.ts_setImageWithURLString(model.middleImageURL, placeholderImage: model.messageFromType.placeHolderImage)
-//        self.unreadNumberLabel.text = model.unreadNumber > 99 ? "99+" : String(model.unreadNumber!)
         self.isReadLabel.isHidden = (model.isRead == true)
         self.lastMessageLabel.text = model.lastMessage!
         self.dateLabel.text = model.dateString!

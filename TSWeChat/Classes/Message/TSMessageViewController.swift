@@ -79,6 +79,9 @@ extension TSMessageViewController: UITableViewDelegate {
         let viewController = TSChatViewController.ts_initFromNib() as! TSChatViewController
         viewController.messageModel = self.itemDataSouce[indexPath.row]
         self.ts_pushAndHideTabbar(viewController)
+        
+        self.itemDataSouce[indexPath.row].isRead = true
+        self.listTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
     }
 }
 
