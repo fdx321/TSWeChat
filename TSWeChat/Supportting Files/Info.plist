@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>是否允许此App使用你的麦克风?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -27,6 +29,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>是否允许此App使用你的相机?</string>
+	<key>NSContactsUsageDescription</key>
+	<string>是否允许此App访问你的通讯录?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>是否允许此App获取你的定位?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>是否允许此App获取你的定位?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>是否允许此App获取你的照片?</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -46,15 +58,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This application requires photo library to work</string>
-	<key>NSContactsUsageDescription</key>
-	<string>This application requires contact to work</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This application requires camera services to work</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This application requires location services to work</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This application requires location services to work</string>
 </dict>
 </plist>

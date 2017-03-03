@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform:ios,'8.0'
+platform:ios,'10.2'
 use_frameworks!
 # ignore all warnings from all pods
 inhibit_all_warnings!
@@ -31,7 +31,7 @@ def pods
     pod 'INTULocationManager', '4.2.0'
 end
 
-target 'TSWeChat' do
+target 'FDXWeChat' do
     pods
 end
 
