@@ -9,13 +9,16 @@
 import UIKit
 import Foundation
 import RxSwift
+import Hyphenate
+import TimedSilver
 
 class TSApplicationManager: NSObject {
-    static func applicationConfigInit() {
+    static func applicationConfigInit(emClientDelegate:EMClientDelegate) {
         self.initNavigationBar()
         self.initNotifications()
         TSProgressHUD.ts_initHUD()
 //        LocationInstance.startLocation({}, failure: {})
+        
     }
 
     /**

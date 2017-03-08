@@ -7,6 +7,7 @@ PODS:
   - Cent (6.0.3):
     - Dollar (~> 6.1.0)
   - Dollar (6.1.0)
+  - Hyphenate (3.2.3)
   - INTULocationManager (4.2.0)
   - KeychainAccess (3.0.1)
   - Kingfisher (3.2.1)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - BSImagePicker (~> 2.5.0)
   - Cent (= 6.0.3)
   - Dollar (= 6.1.0)
+  - Hyphenate (= 3.2.3)
   - INTULocationManager (= 4.2.0)
   - KeychainAccess (= 3.0.1)
   - Kingfisher (= 3.2.1)
@@ -59,6 +61,7 @@ SPEC CHECKSUMS:
   BSImagePicker: 1f98e14efddf550494ef08c560422505456d4058
   Cent: 2e2deb7ced0fc6c4c320075ddd4f63ed8defd8db
   Dollar: 0a9883680f2c1104adf0d19b827c3be71d3e3121
+  Hyphenate: 81c2eb5c8303147f8aef70866811ec12a8b4dcf2
   INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
   Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
@@ -77,6 +80,6 @@ SPEC CHECKSUMS:
   XLActionController: 57fe0ce1642e2eed971b188b490762345fdbf963
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 9a5ae4c6328493b6f38d9bd8c4986b04aa6bbb23
+PODFILE CHECKSUM: c56e23f9861eb6f1060f7c2f44c2b93d1458f5f4
 
 COCOAPODS: 1.1.1

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393B6B9C1E6FDC02008BDBEC /* TSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B6B9A1E6FDC02008BDBEC /* TSLoginViewController.swift */; };
+		393B6B9D1E6FDC02008BDBEC /* TSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393B6B9B1E6FDC02008BDBEC /* TSLoginViewController.xib */; };
+		395ACEB31E6D3BA2006F9EAE /* TSRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395ACEB11E6D3BA2006F9EAE /* TSRegisterViewController.swift */; };
+		395ACEB41E6D3BA2006F9EAE /* TSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395ACEB21E6D3BA2006F9EAE /* TSRegisterViewController.xib */; };
 		AE040A9F1C990B4A003A764D /* TSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE040A9E1C990B4A003A764D /* TSLocationManager.swift */; };
 		AE3CBC551C854B90008BA4AC /* TSChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CBC541C854B90008BA4AC /* TSChatDataManager.swift */; };
 		AE3CBC5A1C858C3F008BA4AC /* TSChatViewController+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CBC591C858C3F008BA4AC /* TSChatViewController+TestData.swift */; };
@@ -139,6 +143,10 @@
 
 /* Begin PBXFileReference section */
 		27527A8418A73767D65A36B7 /* Pods-FDXWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDXWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FDXWeChat/Pods-FDXWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		393B6B9A1E6FDC02008BDBEC /* TSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLoginViewController.swift; sourceTree = "<group>"; };
+		393B6B9B1E6FDC02008BDBEC /* TSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSLoginViewController.xib; sourceTree = "<group>"; };
+		395ACEB11E6D3BA2006F9EAE /* TSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSRegisterViewController.swift; sourceTree = "<group>"; };
+		395ACEB21E6D3BA2006F9EAE /* TSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSRegisterViewController.xib; sourceTree = "<group>"; };
 		3A0A115624D01BDFF95A5161 /* Pods-TSWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSWeChat/Pods-TSWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		6727278FBC1705574548AC5E /* Pods_FDXWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDXWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE040A9E1C990B4A003A764D /* TSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLocationManager.swift; sourceTree = "<group>"; };
@@ -288,6 +296,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		395ACEB01E6D3A6E006F9EAE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				395ACEB11E6D3BA2006F9EAE /* TSRegisterViewController.swift */,
+				395ACEB21E6D3BA2006F9EAE /* TSRegisterViewController.xib */,
+				393B6B9A1E6FDC02008BDBEC /* TSLoginViewController.swift */,
+				393B6B9B1E6FDC02008BDBEC /* TSLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		74663A5ED5DFB8BB9D29510D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +433,7 @@
 		AE92B6041C3FF7C900968A3A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				395ACEB01E6D3A6E006F9EAE /* Login */,
 				AE1E4C431CE32167004BD467 /* Moments */,
 				AEE69B671C81B58600C69224 /* Chat */,
 				AE87426E1C7AE23E003A435C /* CoreModule */,
@@ -728,6 +748,7 @@
 				AEBEE5A81C87345700956B0C /* chat.json in Resources */,
 				AE8742881C7B079B003A435C /* TSMeAvatarTableViewCell.xib in Resources */,
 				AE69C7651C8DDEA600D929CD /* shake_nomatch.wav in Resources */,
+				395ACEB41E6D3BA2006F9EAE /* TSRegisterViewController.xib in Resources */,
 				AE69C7611C8DDEA600D929CD /* call.caf in Resources */,
 				AE92B8C01C3FFC5D00968A3A /* TSMessageViewController.xib in Resources */,
 				AE92B8CC1C3FFD0D00968A3A /* TSContactsViewController.xib in Resources */,
@@ -751,6 +772,7 @@
 				AE69C7601C8DDEA600D929CD /* beep.wav in Resources */,
 				AEBEE5AA1C87345700956B0C /* message.json in Resources */,
 				AE87428A1C7B0D7D003A435C /* Kenny.jpg in Resources */,
+				393B6B9D1E6FDC02008BDBEC /* TSLoginViewController.xib in Resources */,
 				AEE69BD41C81B58600C69224 /* TSChatVoiceIndicatorView.xib in Resources */,
 				AEE69BA51C81B58600C69224 /* TSChatSystemCell.xib in Resources */,
 				AE69C7671C8E6A2500D929CD /* close.wav in Resources */,
@@ -843,6 +865,7 @@
 				AE8F49AC1C46A905009C1541 /* AboutApp.swift in Sources */,
 				AE3CBC5A1C858C3F008BA4AC /* TSChatViewController+TestData.swift in Sources */,
 				AEE69B621C81997500C69224 /* PHAsset+Extension.swift in Sources */,
+				393B6B9C1E6FDC02008BDBEC /* TSLoginViewController.swift in Sources */,
 				AE8F49B31C46A905009C1541 /* UIBarButtonItem+Block.swift in Sources */,
 				AEBEE59E1C86F13D00956B0C /* HttpManager+UploadImage.swift in Sources */,
 				AEE69BA21C81B58600C69224 /* TSChatImageCell.swift in Sources */,
@@ -861,6 +884,7 @@
 				AE87425F1C7AE0F1003A435C /* TSUIColor+WeChat.swift in Sources */,
 				AEE69BA61C81B58600C69224 /* TSChatTextCell.swift in Sources */,
 				AE92B8AE1C3FFC5D00968A3A /* TSTabbarViewController.swift in Sources */,
+				395ACEB31E6D3BA2006F9EAE /* TSRegisterViewController.swift in Sources */,
 				AEE69BBA1C81B58600C69224 /* UIScrollView+ChatAdditions.swift in Sources */,
 				AE8742791C7AE48A003A435C /* NSDate+Extension.swift in Sources */,
 				AEBEE59C1C86F13D00956B0C /* HttpManager.swift in Sources */,

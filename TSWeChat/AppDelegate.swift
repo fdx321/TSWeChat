@@ -12,42 +12,56 @@
  */
 
 import UIKit
+import Hyphenate
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, EMClientDelegate {
     var window: UIWindow?
     var tabbarController: TSTabbarViewController?
+    var loginViewController:TSLoginViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        self.tabbarController = TSTabbarViewController()
+        self.initEM()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.backgroundColor = UIColor.white
-        self.tabbarController = TSTabbarViewController()
-        self.window!.rootViewController = self.tabbarController
-        self.window!.makeKeyAndVisible()
-        TSApplicationManager.applicationConfigInit()
+
+        TSApplicationManager.applicationConfigInit(emClientDelegate: self)
+        
+        if !EMClient.shared().options.isAutoLogin {
+            self.loginViewController = TSLoginViewController.ts_initFromNib() as? TSLoginViewController
+            self.loginViewController?.mainTabBarController = self.tabbarController!
+            let navigationController = UINavigationController(rootViewController: loginViewController!)
+            self.window!.rootViewController = navigationController
+            self.window!.makeKeyAndVisible()
+        }
+        
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    func autoLoginDidCompleteWithError(_ aError: EMError){
+        if aError != nil {
+            //自动登录失败，进入登录页面
+            UIAlertController.ts_singleButtonAlertWithTitle("",message:"进入登录页面",completion:nil)
+        } else {
+            //自动登录成功，进入主页面
+            self.window!.rootViewController = self.tabbarController
+            self.window!.makeKeyAndVisible()
+        }
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    //MARK: 初始化环信
+    func initEM(){
+        let options = EMOptions.init(appkey:"1168170303178521#fdxwechat")
+        let error = EMClient.shared().initializeSDK(with: options)
+        if error != nil {
+            UIAlertController.ts_singleButtonAlertWithTitle("",message:"初始化环信失败",completion:{() -> Void in
+                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+            })
+        }
+        
+        EMClient.shared().add(self, delegateQueue: nil)
     }
 }
 

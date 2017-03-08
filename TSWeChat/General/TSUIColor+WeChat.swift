@@ -25,4 +25,15 @@ extension UIColor {
     class var viewBackgroundColor: UIColor {
         get {return UIColor.init(ts_hexString: "#E7EBEE")}
     }
+    
+    //注册、登录按钮Enable颜色
+    class var buttonEnableColor:UIColor{
+        get {return UIColor.init(ts_hexString:"00B64F", alpha:1.0)}
+    }
+    //注册、登录按钮Disable颜色
+    class var buttonDisableColor:UIColor{
+        get {return UIColor.init(ts_hexString: "#00C64F", alpha:0.6)}
+    }
+    
+    
 }

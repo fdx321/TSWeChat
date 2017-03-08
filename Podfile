@@ -29,6 +29,7 @@ def pods
     pod 'YYText', '1.0.7'
     pod 'SVProgressHUD', '2.0.4'
     pod 'INTULocationManager', '4.2.0'
+    pod 'Hyphenate', '3.2.3'
 end
 
 target 'FDXWeChat' do
