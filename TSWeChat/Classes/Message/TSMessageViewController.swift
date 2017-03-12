@@ -150,6 +150,7 @@ extension TSMessageViewController: ActionFloatViewDelegate {
         case .groupChat:
             break
         case .addFriend:
+            self.ts_pushAndHideTabbar(TSACViewController.ts_initFromNib())
             break
         case .scan:
             break

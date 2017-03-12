@@ -211,6 +211,7 @@ extension UIImage {
         case TabbarBkg = "tabbarBkg"
         case Chat_background = "chat_background"
         case MessageRightTopBg = "MessageRightTopBg"
+        case IconSearch = "icon_search"
         
         var image: UIImage {
             return UIImage(asset: self)

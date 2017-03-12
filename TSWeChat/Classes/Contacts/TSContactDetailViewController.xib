@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TSContactDetailViewController" customModule="FDXWeChat" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="1zq-Fj-fX3" id="4WJ-oM-Vz4"/>
+                <outlet property="tableView" destination="yga-m7-HOe" id="oEC-Ei-tkB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yga-m7-HOe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="330" id="TBs-If-d4o"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zq-Fj-fX3">
+                    <rect key="frame" x="15" y="345" width="345" height="46"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="e18-Al-Kzp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="添加到通讯录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addButtonTouchUpInside" destination="-1" eventType="touchUpInside" id="QBQ-67-whB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yga-m7-HOe" secondAttribute="trailing" id="3K6-CE-MKv"/>
+                <constraint firstItem="1zq-Fj-fX3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="B2c-PV-ndq"/>
+                <constraint firstAttribute="trailing" secondItem="1zq-Fj-fX3" secondAttribute="trailing" constant="15" id="CAy-Qn-WEH"/>
+                <constraint firstItem="yga-m7-HOe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dSP-Z6-MdE"/>
+                <constraint firstItem="1zq-Fj-fX3" firstAttribute="top" secondItem="yga-m7-HOe" secondAttribute="bottom" constant="15" id="joB-Hx-XVI"/>
+                <constraint firstItem="yga-m7-HOe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n0x-Uc-49C"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="92.5"/>
+        </view>
+    </objects>
+</document>
